@@ -60,7 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\CoinTrigger.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SignTrigger.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>G:/Program Files/Git/top-down-rpg-in-unity/Club-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
