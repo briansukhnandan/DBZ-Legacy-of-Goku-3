@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class SwitchScenes : MonoBehaviour
 {   
 
-    void OnTriggerEvent2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag == "Player")
+        if (other.CompareTag("Player") )
         {
 
-            SceneManager.LoadScene("Scene 2");
-
+            Debug.Log("Attempted to switch to Scene 2");
+            SceneManager.LoadScene("2");
 
         }
 

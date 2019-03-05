@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - SceneChanging
+  - Dragonball
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - After all render
   - 
   - 
   - 
@@ -50,4 +53,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 223981531
+    locked: 0
+  - name: Map overlays
+    uniqueID: 2444129687
     locked: 0
