@@ -8,6 +8,7 @@ TagManager:
   - SceneChanging
   - Dragonball
   - Enemy
+  - deathDoor
   layers:
   - Default
   - TransparentFX

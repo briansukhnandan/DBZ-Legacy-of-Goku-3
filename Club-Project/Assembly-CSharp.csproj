@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CoinTrigger.cs" />
+    <Compile Include="Assets\Scripts\deathDoor.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\kingKaiDialogue.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

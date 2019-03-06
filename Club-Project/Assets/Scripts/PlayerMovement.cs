@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Text countText;
 
-    private static int dragonBallCounter = 0;
+    public int dragonBallCounter = 0;
 
     public Text dragonBallText;
 
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
   //  private bool enemyAtkPlayer;
 
     //Public so we can access it from another script
-    public int healthCounter;
+    public static int healthCounter;
 
     public Text healthText;
 
@@ -149,6 +149,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.CompareTag("deathDoor"))
+        {
+
+            if (dragonBallCounter != 3)
+            {
+
+                healthCounter = 0;
+                healthText.text = "Health: " + healthCounter.ToString();
+
+            }
+            
+            
+            Debug.Log("Player touched death door.");
+        }
 
         if (collision.CompareTag("Enemy"))
         {
