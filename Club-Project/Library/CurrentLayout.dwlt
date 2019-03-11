@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 6802
+  controlID: 783
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 6803
+  controlID: 784
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 6804
+  controlID: 785
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 298}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 6790
+  controlID: 734
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be110000
+      m_SelectedIDs: ee060000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1aceffff38ceffff5ad9ffff8ad9ffffd4fbffffee140000601500000e9f000082a30000
+      m_ExpandedIDs: bcf8ffffa0faffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -490,9 +490,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.67657, y: 0.3734188, z: -0.59375}
+    m_Target: {x: 7.0383797, y: -2.0540807, z: -0.1015625}
     speed: 2
-    m_Value: {x: 10.67657, y: 0.3734188, z: -0.59375}
+    m_Value: {x: 7.0383797, y: -2.0540807, z: -0.1015625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -524,9 +524,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 83.61479
+    m_Target: 34.231358
     speed: 2
-    m_Value: 83.61479
+    m_Value: 34.231358
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -559,9 +559,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 292
+    x: 429
     y: 81
-    width: 855
+    width: 948
     height: 543
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &18
@@ -683,20 +683,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\Program Files\Git\top-down-rpg-in-unity\Club-Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 377}
-    m_SelectedIDs: e2120000
-    m_LastClickedID: 4834
-    m_ExpandedIDs: 0000000062090000b60a0000ea0a0000f00a0000840b0000d8100000ce1100001012000020120000681200002213000024130000a41300002436000026360000283600002a3600002c3600002e36000000ca9a3b
+    scrollPos: {x: 0, y: 197}
+    m_SelectedIDs: d0100000
+    m_LastClickedID: 4304
+    m_ExpandedIDs: 0000000062090000b60a0000ea0a0000f00a0000840b0000d8100000ce1100001012000020120000681200002213000024130000a4130000823600008436000086360000883600008a3600008c36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -724,7 +724,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000062090000b60a0000ea0a0000f00a0000840b0000d8100000ce1100001012000020120000681200002213000024130000a41300002436000026360000283600002a3600002c3600002e36000000ca9a3b
+    m_ExpandedIDs: 0000000062090000b60a0000ea0a0000f00a0000840b0000d8100000ce1100001012000020120000681200002213000024130000a4130000823600008436000086360000883600008a3600008c36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
