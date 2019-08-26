@@ -11,31 +11,15 @@ public class deathDoor : MonoBehaviour
 
     public GameObject player;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
 
-        b_collider = GetComponent<Collider2D>();
-
-        playerScript = player.GetComponent<PlayerMovement>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-     
-        if (playerScript.dragonBallCounter == 3)
+        if (collision.tag == "Player")
         {
-
-            Debug.Log("Collider.enabled =  "+ b_collider.enabled);
-            b_collider.enabled = !b_collider.enabled;
-
-            Destroy(this.gameObject);
-
+            Debug.Log("Player touched deathdoor");
 
         }
 
+    }
 
-    } 
 }

@@ -45,6 +45,12 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         //If the enemy and player are < 1.5 blocks apart, and the player is not attacking, move towards the player.
+/* 
+        if (script.godMode == true && Vector2.Distance(transform.position, target.position) <= 1) {
+
+            Destroy(this.gameObject);
+
+        } */
         
 
         if (Vector2.Distance(transform.position, target.position) <= 2)
@@ -54,6 +60,10 @@ public class EnemyScript : MonoBehaviour
 
             if (script.attackState == true)
             {
+
+                if (script.returnGodMode()) {
+                    Destroy(this.gameObject);
+                }
 
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 

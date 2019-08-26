@@ -9,6 +9,8 @@ TagManager:
   - Dragonball
   - Enemy
   - deathDoor
+  - godModeOn
+  - godModeOff
   layers:
   - Default
   - TransparentFX
@@ -49,12 +51,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map overlays
+    uniqueID: 2444129687
+    locked: 0
   - name: Collectibles
     uniqueID: 2781978023
     locked: 0
   - name: Player
     uniqueID: 223981531
-    locked: 0
-  - name: Map overlays
-    uniqueID: 2444129687
     locked: 0

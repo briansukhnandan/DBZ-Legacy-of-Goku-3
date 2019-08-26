@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -38,10 +39,22 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isPlayerDead;
 
+    public static bool godMode;
+
     // Start is called before the first frame update
     void Start()
     {
-        healthCounter = 500;
+        if (godMode) {
+
+            healthCounter = 2147483647;
+
+            healthText.text = "Health: " + healthCounter.ToString() + " (Dev Mode enabled)";
+
+        } else {
+
+            healthCounter = 500;
+
+        }
 
         //Initializes the animationHandler to the animator attached to the object this script is attached to.
         animationHandler = GetComponent<Animator>();
@@ -56,11 +69,27 @@ public class PlayerMovement : MonoBehaviour
 
         isPlayerDead = false;
 
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (godMode) {
+
+            healthCounter = 2147483647;
+
+            healthText.text = "Health: " + healthCounter.ToString() + " (Dev Mode enabled)";
+
+
+        }
+
+        if (healthCounter > 0) {
+
+            isPlayerDead = false;
+
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -130,6 +159,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Player's health has reached 0.");
             isPlayerDead = true;
 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         }
 
         animationHandler.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
@@ -147,8 +178,29 @@ public class PlayerMovement : MonoBehaviour
         animationHandler.SetInteger("Health", healthCounter);
     }
 
+    public bool returnGodMode() {
+        return godMode;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.CompareTag("godModeOn")) {
+
+            healthCounter = (int)(Math.Pow(2, 32)) - 1;
+
+            healthText.text = "Health: " + healthCounter.ToString() + " (Dev Mode enabled)";
+
+            godMode = true;
+
+        }
+
+        if (collision.CompareTag("godModeOff") && returnGodMode()) {
+
+            godMode = false;
+
+
+        }
 
         if (collision.CompareTag("deathDoor"))
         {
@@ -158,6 +210,12 @@ public class PlayerMovement : MonoBehaviour
 
                 healthCounter = 0;
                 healthText.text = "Health: " + healthCounter.ToString();
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+            } else {
+
+                SceneManager.LoadScene("3");
 
             }
             
