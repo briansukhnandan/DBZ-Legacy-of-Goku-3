@@ -17,6 +17,7 @@ public class deathDoor : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Player touched deathdoor");
+            //SceneManager.LoadScene(3);
 
         }
 

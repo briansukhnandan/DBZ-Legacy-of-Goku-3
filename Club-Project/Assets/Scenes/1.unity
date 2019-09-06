@@ -222,7 +222,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -378,18 +378,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Welcome to the H.F.I.L!
-
-    You are probably here for the sins you
-
-    have committed on Earth.
-
-    There is no escape . . .
-
-
-    Made by Brian Sukhnandan
-
-    Current Demo Version: 1.1'
+  m_Text: "Welcome to the H.F.I.L!\nYou are probably here for the sins you\nhave committed
+    on Earth.\nThere is no escape . . .\n\nMade by Brian Sukhnandan\nRelease Version
+    1.0\x13\x13"
 --- !u!222 &420616298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -536,7 +527,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b52a57bea9b6a47e096e15fd1bbe2fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1126,7 +1117,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b52a57bea9b6a47e096e15fd1bbe2fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5918,6 +5909,7 @@ TilemapCollider2D:
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!66 &987170942
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -12145,6 +12137,7 @@ CompositeCollider2D:
       - {x: -1.376, y: -16.934}
       - {x: -1.128, y: -16.934}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!50 &987170943
 Rigidbody2D:
   serializedVersion: 4
@@ -12247,7 +12240,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12954,6 +12947,7 @@ TilemapCollider2D:
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!66 &1018135748
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -13481,6 +13475,7 @@ CompositeCollider2D:
       - {x: -2.44, y: -10.49}
       - {x: -2.42, y: -10.49}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!50 &1018135749
 Rigidbody2D:
   serializedVersion: 4
@@ -13626,7 +13621,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 223981531
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70e0938866517a942824c4df4aa0ff09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13730,7 +13725,6 @@ MonoBehaviour:
   avgSpeed: 5
   horizontalMovement: 0
   countText: {fileID: 1249949024}
-  dragonBallCounter: 0
   dragonBallText: {fileID: 1742538755}
   attackState: 0
   healthText: {fileID: 791868644}
@@ -13836,7 +13830,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13977,7 +13971,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23512,7 +23506,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1512989273
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

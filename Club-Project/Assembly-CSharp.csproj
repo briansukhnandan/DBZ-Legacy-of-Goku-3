@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SignTrigger.cs" />
      <Compile Include="Assets\Scripts\SwitchScenes.cs" />
+     <Compile Include="Assets\Scripts\SwitchScenes3.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/brian/Documents/Git_Repositories/top-down-rpg-in-unity/Club-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

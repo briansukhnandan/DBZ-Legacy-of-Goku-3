@@ -11,6 +11,8 @@ TagManager:
   - deathDoor
   - godModeOn
   - godModeOff
+  - end_door
+  - health_regen
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Text countText;
 
-    public int dragonBallCounter = 0;
+    public static int dragonBallCounter = 0;
 
     public Text dragonBallText;
 
@@ -48,7 +48,11 @@ public class PlayerMovement : MonoBehaviour
 
             healthCounter = 2147483647;
 
+            dragonBallCounter = 7;
+
             healthText.text = "Health: " + healthCounter.ToString() + " (Dev Mode enabled)";
+
+            dragonBallText.text = "Dragon Balls: " + dragonBallCounter.ToString();
 
         } else {
 
@@ -80,7 +84,11 @@ public class PlayerMovement : MonoBehaviour
 
             healthCounter = 2147483647;
 
+            dragonBallCounter = 7;
+
             healthText.text = "Health: " + healthCounter.ToString() + " (Dev Mode enabled)";
+
+            dragonBallText.text = "Dragon Balls: " + dragonBallCounter.ToString();
 
 
         }
@@ -185,6 +193,23 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
+        if (collision.CompareTag("health_regen")) {
+            
+            healthCounter = 500;
+            healthText.text = "Health: " + healthCounter.ToString();
+
+        }
+
+        if (collision.CompareTag("end_door")) {
+
+            Debug.Log("touched end door");
+
+            if (dragonBallCounter == 7) SceneManager.LoadScene("4");
+
+            else Debug.Log("Player does not have 7 DB");
+
+        }
+
         if (collision.CompareTag("godModeOn")) {
 
             healthCounter = (int)(Math.Pow(2, 32)) - 1;
@@ -205,13 +230,15 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("deathDoor"))
         {
 
-            if (dragonBallCounter != 3)
+            if (dragonBallCounter < 3)
             {
 
-                healthCounter = 0;
-                healthText.text = "Health: " + healthCounter.ToString();
+                //healthCounter = 0;
+                //healthText.text = "Health: " + healthCounter.ToString();
 
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+                SceneManager.LoadScene("3");
 
             } else {
 
