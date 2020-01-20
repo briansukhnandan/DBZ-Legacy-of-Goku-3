@@ -4,9 +4,8 @@
 
 
 # To play on Linux: #
-- Just run Release_1_x.x86 in the Club-Project directory: 
-- Execute cd ~/dbz-log-3/Club-Project/ && ./Release_1_(x).x86 in a terminal (where ~ is the dir you cloned to and (x) is the current version in the repo).
-- Or you can just double-click Release_1_x.x86 if your system allows.
+- Just run Release_1_0.x86 in the Club-Project directory (run a chmod +x): 
+- Execute cd ~/dbz-log-3/Club-Project/ && ./Release_1_0.x86 in a terminal (where ~ is the dir you cloned to and (x) is the current version in the repo).
 				  
 
 # To play on Windows: # 
